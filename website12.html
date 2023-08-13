@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif; /* Using Futura and fallback fonts */
+            background: url('/Users/tranta/Downloads/roblox.jpg') no-repeat center center fixed; /* Adjust the path accordingly */
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            text-transform: lowercase; /* Make all text lowercase */
+            position: relative; /* Required for the pseudo-element */
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+            z-index: 0; /* Layer the gradient below the content */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f2f2f2; /* Light gray background color */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 3px; /* Less rounded corners */
+            position: relative; /* Layer the content above the gradient */
+            z-index: 1;
+        }
+
+        h1 {
+            font-weight: bold; /* Make the title bold */
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(to right, #2ecc71, #3498db); /* Green to blue gradient */
+            color: white;
+            text-decoration: none;
+            border-radius: 3px; /* Less rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            opacity: 0.9; /* Slightly transparent */
+        }
+
+        .button:hover {
+            background: linear-gradient(to right, #3498db, #2ecc71); /* Reverse the gradient on hover */
+        }
+    </style>
+    <title>Custom Styled Website</title>
+</head>
+<body>
+    <div class="container">
+        <h1>welcome to my custom site</h1>
+        <p>this website features custom fonts, clean design, shadowing, and gradients.</p>
+        <a href="#" class="button">click me</a>
+    </div>
+</body>
+</html>
