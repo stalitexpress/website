@@ -1,1 +1,1 @@
-i thinking i used chatgpt 4
+i thinking
